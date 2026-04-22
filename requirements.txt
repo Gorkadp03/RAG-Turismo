@@ -23,6 +23,7 @@ python-dotenv     # (Usado en casi todos los archivos para leer .env)
 streamlit         # (Importado en 04_APP.py)
 requests          # (Importado en 04_APP.py)
 Pillow            # (Importado como PIL en 04_APP.py y 01_Ingesta...)
+torchvision
 
 # --- Utilidades ---
 tqdm              # (Importado en 01_Ingesta... y ragas.py)
