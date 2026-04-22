@@ -151,4 +151,4 @@ pip install -r requirements.txt
 uvicorn src.03_API_Separada:app --reload
 
 # 3. Iniciar la App (Frontend) en otra terminal
-streamlit run src/04_APP.py
+streamlit run src/app/04_APP.py
