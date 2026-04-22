@@ -148,7 +148,8 @@ Observacion: Para que la RAG genere respuesta debes tener en cuenta que la base 
 pip install -r requirements.txt
 
 # 2. Iniciar el Servidor (Backend)
-uvicorn src.03_API_Separada:app --reload
+cd src                                  
+uvicorn 03_API_Separada:app --reload
 
 # 3. Iniciar la App (Frontend) en otra terminal
 streamlit run src/app/04_APP.py
