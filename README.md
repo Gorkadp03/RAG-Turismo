@@ -144,13 +144,22 @@ Utilizando un "Golden Set" (preguntas con respuestas ideales), evaluamos la fide
 Observacion: Para que la RAG genere respuesta debes tener en cuenta que la base de datos debe estar creada.
 
 ```bash
-# 1. Instalar dependencias
+# 1. Crear entorno
+py -m venv .venv
+
+# 2. Activar entorno                                                                                             
+& .venv\Scripts\Activate.ps1                                                                                                  
+
+# 3. Actualizar entorno                                                                                             
+python.exe -m pip install --upgrade pip 
+
+# 4. Instalar dependencias
 pip install -r requirements.txt
 
-# 2. Iniciar el Servidor (Backend)
+# 5. Iniciar el Servidor (Backend)
 cd RAG-Turismo\src
 uvicorn 03_API_Separada:app --reload
 
-# 3. Iniciar la App (Frontend) en otra terminal
+# 6. Iniciar la App (Frontend) en otra terminal
 cd RAG-Turismo\src\app
 streamlit run 04_APP.py
